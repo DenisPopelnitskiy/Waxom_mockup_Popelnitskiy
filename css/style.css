@@ -262,10 +262,16 @@ h1 {
     background-color: transparent;
 }
 
-.temporary {
+.temporary1 {
     width: 100%;
     height: 300px;
     background-color: #fff;
+}
+
+.temporary2 {
+    width: 100%;
+    height: 300px;
+    background-color: #fbfaf8;
 }
 
 
