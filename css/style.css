@@ -59,16 +59,29 @@ header {
     padding-top: 40px;
     display: flex;
     align-items: center;
-
 }
 
-.logo-text {
+.logo-link svg {
+    fill: #fff;
+    transition: all 1s ease;
+}
+
+.logo-link:hover svg {
+    fill: #c7b29a;
+}
+
+.logo-link span {
     padding-left: 2px;
     color: #fff;
     font-family: raleway-regular, 'Arial', sans-serif;
     font-weight: 400;
     font-size: 34px;
     line-height: 1.2;
+    transition: all 1s ease;
+}
+
+.logo-link:hover span {
+    color: #c7b29a;
 }
 
 .navigation-line {
@@ -95,6 +108,13 @@ header {
 .basket-search {
     padding-top: 57px;
     display: flex;
+    position: relative;
+}
+
+.basket-image {
+    width: 18px;
+    background-image: url('../img/basket.png');
+    background-repeat: no-repeat;
 }
 
 input[type="search"] {
@@ -108,10 +128,11 @@ input[type="search"] {
     background-repeat: no-repeat;
     border: 1px solid transparent;
     cursor: pointer;
+    position: absolute;
   }
   
   input[type="search"]:focus {
-    width: 300px;
+    width: 200px;
     transition: width 1s ease-out;
     background-position: right;
     border: 1px solid gray;
@@ -262,11 +283,56 @@ h1 {
     background-color: transparent;
 }
 
-.temporary1 {
+.choose-block {
     width: 100%;
-    height: 300px;
     background-color: #fff;
 }
+
+.web-app {
+    border: 1px solid black; 
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.link-services:hover svg {
+    fill: #deb887;
+  }
+  
+  
+  .link-services:hover span,
+  .link-services:hover p {
+    color: #deb887;  
+  }
+  
+  .link-services:hover:after {
+    background-color: #deb887;
+  }
+  
+  .link-services svg {
+    fill: black;
+  }
+  
+  .link-services span {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  
+  .link-services p {
+    width: 100%;
+  }
+  
+  .link-services:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+  }
 
 .temporary2 {
     width: 100%;
