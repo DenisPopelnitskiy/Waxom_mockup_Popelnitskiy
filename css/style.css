@@ -61,16 +61,16 @@ header {
     align-items: center;
 }
 
-.logo-link svg {
+.logo-link .logo-image {
     fill: #fff;
     transition: all 1s ease;
 }
 
-.logo-link:hover svg {
+.logo-link:hover .logo-image {
     fill: #c7b29a;
 }
 
-.logo-link span {
+.logo-link .logo-text {
     padding-left: 2px;
     color: #fff;
     font-family: raleway-regular, 'Arial', sans-serif;
@@ -80,7 +80,7 @@ header {
     transition: all 1s ease;
 }
 
-.logo-link:hover span {
+.logo-link:hover .logo-text {
     color: #c7b29a;
 }
 
@@ -284,55 +284,95 @@ h1 {
 }
 
 .choose-block {
-    width: 100%;
+    width: 61%;
+    margin: 0 auto;
     background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.web-app {
-    border: 1px solid black; 
-    width: 300px;
+.web-app,
+.development,
+.customization,
+.marketing {
+    border: 1px solid transperrent; 
+    width: 266px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #555;
+    margin: 40px 0;
 }
 
-.link-services:hover svg {
-    fill: #deb887;
-  }
+.web-app:hover svg,
+.development:hover svg,
+.customization:hover svg,
+.marketing:hover svg {
+    fill: #c7b299;
+}
   
+.web-app:hover h2,
+.development:hover h2,
+.customization:hover h2,
+.marketing:hover h2 {
+    color: #c7b299;  
+}
   
-  .link-services:hover span,
-  .link-services:hover p {
-    color: #deb887;  
-  }
-  
-  .link-services:hover:after {
-    background-color: #deb887;
-  }
-  
-  .link-services svg {
-    fill: black;
-  }
-  
-  .link-services span {
+.web-app:hover:after,
+.development:hover:after,
+.customization:hover:after,
+.marketing:hover:after {
+    background-color: #c7b299;
+}
+
+.web-app svg,
+.development svg,
+.customization svg,
+.marketing svg {
+    fill: #555;
+    margin: 40px 0 29px 0;
+}
+
+.web-app h2,
+.development h2,
+.customization h2,
+.marketing h2 {
     width: 100%;
-    margin: 10px 0 0 0;
-  }
-  
-  .link-services p {
+    font-family: raleway-semiBold, 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 19px;
+}
+
+.web-app p,
+.development p,
+.customization p,
+.marketing p {
     width: 100%;
-  }
-  
-  .link-services:after {
+    color: #8c8c8c;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 19px;
+}
+
+.web-app:after,
+.development:after,
+.customization:after,
+.marketing:after {
     content: "";
     display: block;
-    width: 100px;
-    height: 2px;
-    background-color: black;
-  }
+    width: 75px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-bottom: 40px;
+}
+
+
+
 
 .temporary2 {
     width: 100%;
