@@ -59,16 +59,29 @@ header {
     padding-top: 40px;
     display: flex;
     align-items: center;
-
 }
 
-.logo-text {
+.logo-link .logo-image {
+    fill: #fff;
+    transition: all 1s ease;
+}
+
+.logo-link:hover .logo-image {
+    fill: #c7b29a;
+}
+
+.logo-link .logo-text {
     padding-left: 2px;
     color: #fff;
     font-family: raleway-regular, 'Arial', sans-serif;
     font-weight: 400;
     font-size: 34px;
     line-height: 1.2;
+    transition: all 1s ease;
+}
+
+.logo-link:hover .logo-text {
+    color: #c7b29a;
 }
 
 .navigation-line {
@@ -95,6 +108,13 @@ header {
 .basket-search {
     padding-top: 57px;
     display: flex;
+    position: relative;
+}
+
+.basket-image {
+    width: 18px;
+    background-image: url('../img/basket.png');
+    background-repeat: no-repeat;
 }
 
 input[type="search"] {
@@ -108,10 +128,11 @@ input[type="search"] {
     background-repeat: no-repeat;
     border: 1px solid transparent;
     cursor: pointer;
+    position: absolute;
   }
   
   input[type="search"]:focus {
-    width: 300px;
+    width: 200px;
     transition: width 1s ease-out;
     background-position: right;
     border: 1px solid gray;
@@ -262,16 +283,120 @@ h1 {
     background-color: transparent;
 }
 
-.temporary1 {
-    width: 100%;
-    height: 300px;
+.choose-block {
+    width: 61%;
+    margin: 0 auto;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
-.temporary2 {
+.web-app,
+.development,
+.customization,
+.marketing {
+    border: 1px solid transperrent; 
+    width: 266px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #555;
+    margin: 40px 0;
+}
+
+.web-app:hover svg,
+.development:hover svg,
+.customization:hover svg,
+.marketing:hover svg {
+    fill: #c7b299;
+}
+  
+.web-app:hover h2,
+.development:hover h2,
+.customization:hover h2,
+.marketing:hover h2 {
+    color: #c7b299;  
+}
+  
+.web-app:hover:after,
+.development:hover:after,
+.customization:hover:after,
+.marketing:hover:after {
+    background-color: #c7b299;
+}
+
+.web-app svg,
+.development svg,
+.customization svg,
+.marketing svg {
+    fill: #555;
+    margin: 40px 0 29px 0;
+}
+
+.web-app h2,
+.development h2,
+.customization h2,
+.marketing h2 {
+    width: 100%;
+    font-family: raleway-semiBold, 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 19px;
+}
+
+.web-app p,
+.development p,
+.customization p,
+.marketing p {
+    width: 100%;
+    color: #8c8c8c;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 19px;
+}
+
+.web-app:after,
+.development:after,
+.customization:after,
+.marketing:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-bottom: 40px;
+}
+
+.realization-section {
     width: 100%;
     height: 300px;
     background-color: #fbfaf8;
+}
+
+.realization-title {
+    width: 26%;
+    padding-top: 83px;
+    margin: 0 auto;
+    color: #555;
+    font-family: raleway-semiBold, 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.realization-paragraph {
+    width: 40%;
+    padding-top: 24px;
+    margin: 0 auto;
+    color: #8c8c8c;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
 }
 
 
@@ -284,4 +409,29 @@ aside {
     background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     width: 100%;
     height: 150px;
+}
+
+.ads-title {
+    width: 28%;
+    padding-top: 48px;
+    margin-left: 376px;
+    color: #fff;
+    font-family: raleway-regular, 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: left;
+}
+
+.ads-highlight {
+    color: #c7b299;
+}
+
+.ads-paragraph {
+    padding-top: 8px;
+    margin-left: 376px;
+    color: #615855;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
 }
