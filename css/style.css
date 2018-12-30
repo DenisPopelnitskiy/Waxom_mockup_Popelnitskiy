@@ -373,7 +373,6 @@ h1 {
 
 .realization-section {
     width: 100%;
-    height: 300px;
     background-color: #fbfaf8;
 }
 
@@ -391,6 +390,7 @@ h1 {
 .realization-paragraph {
     width: 40%;
     padding-top: 24px;
+    padding-bottom: 40px;
     margin: 0 auto;
     color: #8c8c8c;
     font-family: 'Montserrat', 'Arial', sans-serif;
@@ -399,7 +399,37 @@ h1 {
     text-align: center;
 }
 
+.realization-images-wrap {
+    width: 1230px;
+    height: 482px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
 
+.browser-photo:first-child {
+position: absolute;
+top: 82px;
+width: 770px;
+height: 400px;
+z-index: 1;
+}
+
+.browser-photo:nth-child(2) {
+margin: 0 auto;
+width: 770px;
+height: 482px;
+z-index: 2;
+}
+
+.browser-photo:last-child {
+position: absolute;
+top: 82px;
+right: 0;
+width: 770px;
+height: 400px;
+z-index: 1;
+}
 
 aside {
     background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
