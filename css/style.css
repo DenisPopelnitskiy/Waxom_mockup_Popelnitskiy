@@ -562,6 +562,7 @@ aside {
     line-height: 21px;
     text-align: center;
     outline: none;
+    cursor: pointer;
 }
 
 .latest-projects-button:hover {
@@ -589,6 +590,8 @@ article {
 }
 
 
+
+
 .load-more-button {
     width: 170px;
     height: 50px;
@@ -611,35 +614,4 @@ article {
 .load-more-button:active {
     box-shadow: 0 3px #736357;
     transform: translateY(2px);
-    outline: none;
-}
-
-.get-started {
-    color: #fff;
-    width: 170px;
-    height: 53px;
-    background-color: #998675;
-    display: flex;
-    border-radius: 5px;
-    margin-top: 52px;
-   
-}
-
-.get-started:hover {
-    background-color: #736357;
-    box-shadow: 0 5px #998675;
-}
-
-.get-started:active {
-    background-color: #998675;
-    box-shadow: 0 5px #736357;
-}
-
-.header-button {
-    margin: auto;
-    text-transform: uppercase;
-    font-family: raleway-extrabold, 'Arial', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 23px;
 }
