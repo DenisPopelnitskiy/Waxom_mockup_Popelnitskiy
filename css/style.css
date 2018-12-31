@@ -42,7 +42,7 @@ ul {
     display: flex;
 }
 
-header {
+.header-container {
     width: 100%;
     height: 1024px;
     background-color: #4a4842;
@@ -311,6 +311,7 @@ h1 {
 .customization:hover svg,
 .marketing:hover svg {
     fill: #c7b299;
+    transition-duration: 0.7s;
 }
   
 .web-app:hover h2,
@@ -318,6 +319,7 @@ h1 {
 .customization:hover h2,
 .marketing:hover h2 {
     color: #c7b299;  
+    transition-duration: 0.7s;
 }
   
 .web-app:hover:after,
@@ -325,6 +327,7 @@ h1 {
 .customization:hover:after,
 .marketing:hover:after {
     background-color: #c7b299;
+    transition-duration: 0.7s;
 }
 
 .web-app svg,
@@ -585,8 +588,70 @@ aside {
 article {
     width: 370px;
     height: 337px;
-    border: 1px solid black;
+    position: relative;
+}
 
+.project-picture {
+    width: 100%;
+    height: 237px;
+    display: block;
+}
+
+.project-picture-notes {
+    background-color: #fbfaf8;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.project-picture-notes:after {
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom: 15px solid #fbfaf8;
+    top: -30px; 
+    left: 12px;
+}
+
+.project-picture-header {
+    padding-top: 30px;
+    margin-left: 28px;
+    color: #c7b29a;
+    font-family: raleway-medium, 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+}
+
+.project-picture-paragraph {
+    padding-top: 14px;
+    margin-left: 28px;
+    color: #d1d1d1;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
+
+article:hover .project-picture-notes {
+    background-color: #362f2d;
+}
+
+article:hover .project-picture-notes:after {
+    border-bottom: 15px solid #362f2d;
+}
+
+article:hover .project-picture-header {
+    color: #fff;
+}
+
+article:hover .project-picture-paragraph {
+    color: #c7b299;
+}
+
+article:hover .project-picture {
+    filter: opacity(25%);
 }
 
 
