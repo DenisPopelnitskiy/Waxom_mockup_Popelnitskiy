@@ -661,7 +661,7 @@ article:hover .project-picture {
     width: 170px;
     height: 50px;
     margin: 0 auto 80px auto;
-    background: #998675;
+    background-color: #998675;
     border-radius: 3px;
     color: #fff;
     font-family: raleway-extraBold, 'Arial', sans-serif;
@@ -679,4 +679,9 @@ article:hover .project-picture {
 .load-more-button:active {
     box-shadow: 0 3px #736357;
     transform: translateY(2px);
+}
+
+.load-more-button:hover {
+    background-color: #736357;
+    box-shadow: 0 3px #998675;
 }
