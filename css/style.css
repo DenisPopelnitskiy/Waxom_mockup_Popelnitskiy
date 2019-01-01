@@ -585,7 +585,7 @@ aside {
     align-content: space-between;
 }
 
-article {
+.article-latest-project {
     width: 370px;
     height: 337px;
     position: relative;
@@ -634,27 +634,52 @@ article {
     text-align: left;
 }
 
-article:hover .project-picture-notes {
+.article-latest-project:hover .project-picture-notes {
     background-color: #362f2d;
 }
 
-article:hover .project-picture-notes:after {
+.article-latest-project:hover .project-picture-notes:after {
     border-bottom: 15px solid #362f2d;
 }
 
-article:hover .project-picture-header {
+.article-latest-project:hover .project-picture-header {
     color: #fff;
 }
 
-article:hover .project-picture-paragraph {
+.article-latest-project:hover .project-picture-paragraph {
     color: #c7b299;
 }
 
-article:hover .project-picture {
-    filter: opacity(25%);
+.article-latest-project:hover .project-picture {
+    filter: contrast(15%);
 }
 
+.article-latest-project .lock,
+.article-latest-project .search {
+  display: none;
+  fill: #fff;
+  position: absolute;
+}
 
+.article-latest-project .lock {
+    top: 30%;
+    left: 38%;
+}
+  
+.article-latest-project .search {
+    top: 30%;
+    left: 52%;
+}
+
+.article-latest-project:hover .lock,
+.article-latest-project:hover .search {
+  display: block;
+}
+
+.article-latest-project:hover .lock:hover,
+.article-latest-project:hover .search:hover {
+  fill: #c7b299;
+}
 
 
 .load-more-button {
