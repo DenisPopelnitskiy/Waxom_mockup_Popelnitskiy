@@ -849,6 +849,42 @@ aside {
     justify-content: space-between;
 }
 
+.icon-image1,
+.icon-image2,
+.icon-image3,
+.icon-image4,
+.icon-image5 {
+    margin: 69px auto 0 auto;
+    padding-top:44px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.icon-image1 {
+    background-image: url('../img/icon-image1.svg')
+}
+
+
+.icon-image2 {
+    background-image: url('../img/icon-image2.svg')
+}
+
+
+.icon-image3 {
+    background-image: url('../img/icon-image3.svg')
+}
+
+
+.icon-image4 {
+    background-image: url('../img/icon-image4.svg')
+}
+
+
+.icon-image5 {
+    background-image: url('../img/icon-image5.svg')
+}
+
 .statistic-block-header {
     color: #fff;
     font-family: 'Montserrat', 'Arial', sans-serif;
