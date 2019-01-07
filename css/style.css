@@ -517,7 +517,8 @@ aside {
     background-color: #fff;
 }
 
-.latest-projects-title {
+.latest-projects-title,
+.recent-posts-title {
     width: 15%;
     margin: 0 auto;
     padding-top: 81px;
@@ -528,7 +529,8 @@ aside {
     text-align: center;
 }
 
-.latest-projects-paragraph {
+.latest-projects-paragraph,
+.recent-posts-paragraph {
     width: 40%;
     margin: 0 auto;
     padding: 24px 0 40px 0;
