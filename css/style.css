@@ -1091,5 +1091,35 @@ aside {
     background-image: url('../img/icon-right-active.svg')
 }
 
+.labels {
+    width: 100%;
+    background-color: #191919;
+    background-image: url('../img/mountins.png')
+}
+
+.labels-container {
+    width: 58%;
+    margin: 0 auto;
+    padding: 137px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.widgets {
+    width: 100%;
+    height: 508px;
+    background-color: #191919;
+}
+
+
+footer {
+    width: 100%;
+    height: 111px;
+    background-color: #111;
+}
+
 
 
