@@ -576,7 +576,7 @@ aside {
 
 .latest-projects-pictures {
     height: 704px;
-    width: 1170px;
+    width: 61%;
     margin: 0 auto 40px auto;
     display: flex;
     flex-wrap: wrap;
@@ -1005,6 +1005,90 @@ aside {
 
 .article-recent-posts:hover .picture-recent-posts {
     filter: brightness(50%);
+}
+
+.article-recent-posts:hover .date-day-box {
+    background-color: #c7b299;
+}
+
+.article-recent-posts:hover .date-month-box {
+    background-color: #a48d72;
+}
+
+.date-box {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.date-day-box {
+    background-color: #363636;
+    border-radius: 3px 3px 0 0;
+    padding: 8px;
+}
+
+.date-month-box {
+    background-color: #252525;
+    border-radius: 0 0 3px 3px;
+    padding: 2.5px;
+}
+
+.date-day {
+    color: #fff;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.date-month {
+    color: #fff;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.narrow-buttons {
+    width: 52px;
+    height: 22px;
+    margin: 0 auto 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-button {
+    width: 22px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    background-image: url('../img/icon-left-passive.svg');
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.right-button {
+    width: 22px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    background-image: url('../img/icon-right-passive.svg');
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.left-button:hover {
+    width: 22px;
+    background-image: url('../img/icon-left-active.svg')
+}
+
+.right-button:hover {
+    width: 22px;
+    background-image: url('../img/icon-right-active.svg')
 }
 
 
