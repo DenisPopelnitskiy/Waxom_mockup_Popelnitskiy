@@ -1325,9 +1325,81 @@ aside {
 
 footer {
     width: 100%;
-    height: 111px;
     background-color: #111;
 }
+
+.footer-container {
+    width: 61%;
+    margin: 0 auto;
+    padding: 45px 0 52px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-navigation1 {
+    width: 35%;
+}
+
+.footer-container-navigation2 {
+    width: 28%;
+}
+
+.navigation-footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #545454;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.waxom-highlight {
+    color: #959595;
+}
+
+.navigation-footer-item {
+    color: #545454;
+    position: relative;
+    transition-duration: 0.7s;
+}
+
+.navigation-footer-item:hover {
+    color: #c7b299;
+}
+
+.navigation-footer-item::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #242424;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    position: absolute;
+    top: 3px;
+    left: -13px;
+}
+
+.last-item::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #242424;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    position: absolute;
+    top: 4px;
+    left: 168px;
+}
+
+
 
 
 
