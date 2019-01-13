@@ -39,10 +39,11 @@ a {
 
 .header-container {
     width: 100%;
-    height: 1024px;
     background-color: #4a4842;
     background-image: url('../img/photo_tinified.png');
     background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
 .header-top {
@@ -90,16 +91,31 @@ a {
     display: flex;
 }
 
+.navigation-menu li {
+    display: flex;
+    align-items: center;
+}
+
 .navigation-item {
     color: #fff;
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 14px;
     margin: 0 30px 0 0;
+    display: block;
 }
 
 .navigation-item:hover {
     color: #c7b29a;
+}
+
+label,
+#navigation-menu {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .navigation-menu {
+    visibility: visible;
 }
 
 .basket-search {
@@ -262,6 +278,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 150px auto 0 auto;
+    padding-bottom: 40px;
 }
 
 .pagination-item {
@@ -285,6 +302,7 @@ h1 {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .web-app,
@@ -457,7 +475,7 @@ aside {
     width: 28%;
 }
 
-.ads-title {
+.aside-title {
     width: 100%;
     padding-top: 48px;
     color: #fff;
@@ -467,11 +485,11 @@ aside {
     text-align: left;
 }
 
-.ads-highlight {
+.aside-highlight {
     color: #c7b299;
 }
 
-.ads-paragraph {
+.aside-paragraph {
     width: 100%;
     padding: 8px 0 49px 0;
     color: #615855;
@@ -710,7 +728,6 @@ aside {
 
 .video-section {
     width: 100%;
-    height: 705px;
     position: relative;
 }
 
@@ -923,6 +940,7 @@ aside {
     margin: 0 auto 40px auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .article-recent-posts {
@@ -1333,6 +1351,7 @@ footer {
     padding: 45px 0 52px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-container-navigation1 {
@@ -1398,4 +1417,153 @@ footer {
     left: 168px;
 }
 
-/**/
+@media screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    .basket-search {
+        display: none;
+    }
+
+    .header-top {
+        min-height: 150px;
+    }
+
+    .logo-link {
+        padding-top: 0;
+    }
+    
+    .navigation-line {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+        border: 1px solid #fff;
+        /*background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');*/
+        background-size: 100%;
+    }
+
+    label:after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 18px auto;
+    }
+
+
+    .navigation-menu {
+        /*visibility: hidden;*/
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .choose-block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .web-app,
+    .development,
+    .customization,
+    .marketing {
+    border: 1px solid transperrent; 
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #555;
+    margin: 5px;
+    }
+
+    .web-app:after,
+    .development:after,
+    .customization:after,
+    .marketing:after {
+        margin-bottom: 30px;
+    }
+
+    .realization-section {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .latest-projects-title,
+    .latest-projects-paragraph {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+
+    .latest-projects-buttons,
+    .latest-projects-pictures {
+        display: none;  
+    }
+
+    .load-more-button {
+        margin: 20px auto;
+    }
+
+    .statistic {
+        display: none;
+    }
+
+    .recent-posts-title {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .recent-posts-paragraph {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .narrow-buttons {
+        display: none;
+    }
+
+    .labels-container {
+        width: 100%;
+    }
+
+    .widgets {
+        display: none;
+    }
+
+    .footer-container-navigation1 {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .footer-container-navigation2 {
+        width: 90%;
+    }
+}
